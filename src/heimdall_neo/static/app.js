@@ -46,7 +46,7 @@ let refreshing = false;
 
 async function refresh() {
     refreshing = true;
-    countdown.textContent = 'updating…';
+    countdown.textContent = 'updating...';
     try {
         const res = await fetch(location.href);
         if (res.ok) {
